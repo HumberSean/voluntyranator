@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Student Selector</title>
+	<link href="voluntyrannator_stuff/app_files/volunteer.css" rel="stylesheet" type="text/css" />
+	<script src="studentlist.js"></script>
+</head>
+<body>
+<!--VOLUNTYRANNATOR CREATED BY SEAN DOYLE
+MAY 2025 V5.0 INCLUDES NUMBER OF TEAMS SELECTION.
+-->
+	<h1>The Voluntyrannator</h1>
+<!--SECTION FOR ADDING DATE WHEN PRINTING-->
+    <section id="date__box"><h2>DATE GOES HERE</h2></section>
+
+<!--SECTION FOR SELECTOR BUTTONS-->
+	<section id="buttons">
+		<button id="buttons__all">All Students</button>
+		<button id="buttons__one">One Student at a Time</button>
+		<button id="buttons__pairs">Partners</button><br />
+		<p>Teams of 
+			<select id="slct__teamsOf">
+				<option value="0">==SELECT==</option>
+				<option value="3">THREE</option>
+				<option value="4">FOUR</option>
+				<option value="5">FIVE</option>
+				<option value="6">SIX</option>
+				<option value="7">SEVEN</option>
+				<option value="8">EIGHT</option>
+			</select>
+		</p>
+		<p>
+			<select id="slct__teams">
+				<option value="0">==SELECT==</option>
+				<option value="2">TWO</option>
+				<option value="3">THREE</option>
+				<option value="4">FOUR</option>
+				<option value="5">FIVE</option>
+				<option value="6">SIX</option>
+				<option value="7">SEVEN</option>
+				<option value="8">EIGHT</option>
+				<option value="9">NINE</option>
+				<option value="10">TEN</option>
+			</select>
+			Teams
+		</p>
+		<button id="buttons__groups">All Groups</button>
+
+<!--OUTPUT DIV FOR STUDENT SELECTOR-->
+		<div id="classSingle">
+			<button id="buttons__next">Next Student</button>
+			<div id="countdownBox"></div>
+		</div>
+	</section>
+
+<!--OUTPUT DIV FOR CLASS/PAIR/GROUP LISTS-->
+	<div id="classList"></div>
+
+<!--PRINT BUTTON-->
+	<section id="print__box">
+		<button id="print__btn">PRINT</button>
+	</section>
+
+
+<script src="voluntyrannator_stuff/app_files/app.js"></script>
+</body>
+</html>

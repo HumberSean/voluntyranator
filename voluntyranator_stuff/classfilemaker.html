@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Make Your Class File</title>
+		<style>
+			#vol_txt_id{font-family: monospace;}
+			#btn_reset{margin-left: 8em;}
+		</style>
+	</head>
+	<body>
+<!--VOLUNTYRANNATOR CLASS FILE MAKER CREATED BY SEAN DOYLE
+JULY 2019 V1.0
+-->
+		<h1>Voluntyrannator Class File Builder</h1>
+		
+<!-- INSTRUCTIONS -->
+		<ol>
+			<li>Download your class file from <a href="https://humber.ca/myhumber/" target="_blank" rel="rel=”noreferrer noopener">myhumber</a>.</li>
+			<li>Select all of the student names from the names column, then copy and paste them into the space below.</li>
+			<li>Get rid of middle names if you wish, or modify first names as requested by students &mdash; be sure not to delete any commas.</li>
+			<li>Click 'Create JavaScript File'.</li>
+			<li>Copy the generated text and paste it into the <em>studentlist.js</em> file, then save the file.</li>
+			<li>Your Voluntyrannator should be good to go!</li>
+		</ol>
+
+<!-- CLASS LIST FORM -->
+		<form name="vol_form">
+			<input type="submit" value="Create JavaScript File" />
+			<button id="btn_reset">Reset the Form</button><br />
+			<textarea id="vol_txt_id" name="vol__txt" rows="50" cols="50">Paste your class list here</textarea>
+		</form>
+
+		<script src="classfilemaker.js"></script>
+	</body>
+</html>

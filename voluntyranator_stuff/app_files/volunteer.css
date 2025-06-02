@@ -1,0 +1,63 @@
+﻿/*VOLUNTYRANNATOR V5.0 MAY 2025
+CREATED BY SEAN DOYLE */
+@font-face {
+font-family: "ScaryFont";
+src: url("Insomnia.ttf");
+}
+
+#classSingle {
+	display: none;
+}
+#classList {
+    display: flex;
+}
+h1 {font-family: ScaryFont, serif;}
+h2 {
+	margin-bottom: 0;
+}
+#date__box {
+    display: none;
+}
+#date__box h2 {
+    font-weight: bold;
+}
+.teams__list{
+	margin-top: 0;
+	padding-top: 0;
+	list-style-type: none;
+	margin-left: 1em;
+	padding-left: 0;
+}
+.teams__list li{
+	
+}
+#print__box {
+	position: fixed;
+	top: 7px;
+	right: 10px;
+ 	display:none; /**/
+    
+    background: #c0c0c0;
+    border: 3px solid #b80d0d;
+    border-radius: 15px;
+    padding: 6px 10px 6px 10px;
+}
+#print__btn {
+	font-size: 1.5em;
+	padding-right: 15px;
+}
+#print__btn img{
+	position: relative;
+	top: 2px;
+}
+/*============== STYLING FOR PRINTING ==========*/
+@media print {
+	/*HIDE UNWANTED ELEMENTS*/
+    #print__box{display:none !important;}
+    #buttons{display:none;}
+    
+    /*SHOW DATE*/
+    #date__box {
+        display: block;
+    }
+}/*END PRINT RULES*/
