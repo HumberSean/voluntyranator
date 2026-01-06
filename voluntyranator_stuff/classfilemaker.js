@@ -1,6 +1,8 @@
-﻿//****Class List JavaScript file creator V 1.0.0
+﻿//****Class List JavaScript file creator V 1.1
 //****by Sean Doyle
-//****This file is used with classfilemaker.html to allow users to paste in a class list from a csv file and turn it into the JavaScript file required for Volunteerinator.
+//****This file is used with classfilemaker.html to allow users to paste in a class list from a csv file and turn it into the JavaScript file required for Voluntyranator.
+
+//1.1 Fixes bug that missed the last student pasted in.
 var txtFlag = false;
 var formHandle = document.forms.vol_form;
 var formTxt = formHandle.vol__txt;
@@ -28,13 +30,14 @@ function processForm() {
 	}
 
 	//create string of names with array architecture
-	for (var i = 0; i < classNamesArray.length - 1; i++) {
+	for (var i = 0; i < classNamesArray.length ; i++) {
 		classString += '\t' + classNamesArray[i];
 		//check if item is last and add comma if it isn't
-		if (i !== classNamesArray.length - 2) {
+		if (i !== classNamesArray.length - 1) {
 			classString += ',\r';
 		}
 	}
+
 
 	//output code strings concatenated with string of names
 	formTxt.value = js_head + classString + js_end;
