@@ -1,7 +1,8 @@
-//V5.0
-//ADDED ABILITY TO SELECT NUMBER OF TEAMS.
+//V5.1 ADD NUMBER OF STUDENTS TO All Students BUTTON
 
-//V4.0 ADDED SUPPORT FOR SELECTING TEAMS, ALLOW PRINTING, ADD 'use strict' & LINT.
+
+//V5.0 ADD ABILITY TO SELECT NUMBER OF TEAMS.
+//V4.0 ADD SUPPORT FOR SELECTING TEAMS, ALLOW PRINTING, ADD 'use strict' & LINT.
 /*TODO:
 =ADD MORE STYLING
     =COLUMNS/FLEXBOX
@@ -30,6 +31,8 @@
     var classOut = document.getElementById("classList");
     var countdownOut = document.getElementById("countdownBox");
     var singleDiv = document.getElementById("classSingle");
+	var studentNumberOut = document.getElementById("numOfStudents");
+	studentNumberOut.innerText = myClass.length;
     var osaatArray;//1 STUDENT AT A TIME ARRAY VAR
 
 
