@@ -1,4 +1,4 @@
-//V5.1 ADD NUMBER OF STUDENTS TO All Students BUTTON
+//V5.1 ADD NUMBER OF STUDENTS TO All Students BUTTON. Fix bug for Teams of # losing 1 left over student.
 
 
 //V5.0 ADD ABILITY TO SELECT NUMBER OF TEAMS.
@@ -179,7 +179,7 @@
         var teamCounter = 1;
         var numOfMmbrs = document.getElementById("slct__teamsOf").value;
 
-        while(rndTeamsArray.length > 1) {
+        while(rndTeamsArray.length > 0) {
             teamsListOut += "<div><h2>Team " + teamCounter + "</h2>";
             teamCounter++;
 
