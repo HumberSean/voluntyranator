@@ -5,9 +5,9 @@
 //V4.0 ADD SUPPORT FOR SELECTING TEAMS, ALLOW PRINTING, ADD 'use strict' & LINT.
 /*TODO:
 =ADD MORE STYLING
-    =COLUMNS/FLEXBOX
+	=BUG: When selecting Teams of, one person is getting dropped if not evenly divisible. Try Teams of 4 with 9 students to see bug.
     =ORGANIZE BUTTONS AND STYLE
-    =POSITION PRINT BUTTON
+
 */
 
 //==== RANDOMLY SORT ARRAYS USING FISHER YATES METHOD ATTACHED TO PROTOTYPE ====
